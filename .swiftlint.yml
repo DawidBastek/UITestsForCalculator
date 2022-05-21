@@ -1,0 +1,39 @@
+disabled_rules:
+  - identifier_name
+  - file_length
+  - line_length
+
+opt_in_rules:
+  - control_statement # if, for, guard, switch, while, and catch statements shouldn’t unnecessarily wrap their conditionals or arguments in parentheses.
+
+  - empty_count # Prefer checking isEmpty over comparing count to zero.
+
+  - empty_string # Prefer checking isEmpty over comparing string to an empty string literal.
+
+  - trailing_newline # Files should have a single trailing newline.
+
+  - colon # Colons should be next to the identifier when specifying a type and next to the key in dictionary literals.
+
+  - comma # There should be no space before and one after any comma.
+
+  - fatal_error_message # A fatalError call should have a message.
+
+  - file_name # File name should match a type or extension declared in the file (if any).
+
+  - yoda_condition # The variable should be placed on the left, the constant on the right of a comparison operator.
+  
+  - indentation_width # Indent code using either one tab or the configured amount of spaces, unindent to match previous indentations. Don’t indent the first line.
+
+excluded:
+  - Pods
+  - Frameworks
+
+force_try: warning
+force_cast: warning
+
+function_parameter_count:
+  warning: 6
+
+large_tuple:
+  warning: 3
+  error: 4
