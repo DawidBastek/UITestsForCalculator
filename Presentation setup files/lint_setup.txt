@@ -1,0 +1,8 @@
+if which "${PODS_ROOT}/SwiftLint/swiftlint" >/dev/null; then
+    swiftlint
+else
+    echo "warning: Swiftlint not installed!"
+fi
+
+
+    swiftlint --fix
