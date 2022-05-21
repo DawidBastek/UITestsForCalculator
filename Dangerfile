@@ -16,7 +16,7 @@ warn("PR has too short description. 📝 You should provide a description of the
 end
 
 # Warn to run tests
-# if github.pr_title.include? ("feature/" || "tests/")
+if github.pr_title.include? ("feature/" || "tests/")
 warn("Did you run tests on Jenkins?")
 
 # Warn when there is a big PR
