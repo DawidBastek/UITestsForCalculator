@@ -4,7 +4,7 @@ disabled_rules:
   - line_length
 
 opt_in_rules:
-  - control_statement # if, for, guard, switch, while, and catch statements shouldn’t unnecessarily wrap their conditionals or arguments in parentheses
+  - control_statement # if, for, guard, switch, while, and catch statements shouldn’t unnecessarily wrap their conditionals or arguments in parentheses.
 
   - empty_count # Prefer checking isEmpty over comparing count to zero.
 
